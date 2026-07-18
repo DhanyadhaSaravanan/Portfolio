@@ -9,6 +9,23 @@
   --font-sans: "Inter", system-ui, sans-serif;
 }
 
+@layer utilities {
+  .text-primary { color: var(--color-primary) !important; }
+  .bg-primary { background-color: var(--color-primary) !important; }
+  .border-primary { border-color: var(--color-primary) !important; }
+  .text-secondary { color: var(--color-secondary) !important; }
+  .bg-secondary { background-color: var(--color-secondary) !important; }
+  .text-muted { color: var(--color-muted) !important; }
+  .hover\:bg-primary:hover { background-color: var(--color-primary) !important; }
+  .hover\:bg-primary-hover:hover { background-color: var(--color-primary-hover) !important; }
+  .hover\:text-primary:hover { color: var(--color-primary) !important; }
+  .focus\:ring-primary:focus {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  }
+  .from-primary { --tw-gradient-from: var(--color-primary) var(--tw-gradient-from-position); }
+  .to-primary { --tw-gradient-to: var(--color-primary) var(--tw-gradient-to-position); }
+}
+
 html {
   scroll-behavior: smooth;
 }
